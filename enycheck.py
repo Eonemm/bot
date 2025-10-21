@@ -315,7 +315,7 @@ async def handle_document(message: types.Message):
                     continue
                 parts = line.split(";")
                 if len(parts) != 2:
-                    errors.append(f"Рядок {lineno}: невірний формат [1;08:55 - 09:35]")
+                    errors.append(f"Рядок {lineno}: невірний формат 1;08:55 - 09:35")
                     continue
                 number, timestr = parts[0].strip(), parts[1].strip()
                 if not number.isdigit():
